@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="headLine">It's only need 100 points to won 🏆</h3>
+    <main>
+        <section class="player player--1 player-active">
+            <h2 class="namePlayer_1" id="name--1">Player 1</h2>
+            <p class="score" id="score--1">0</p>
+            <div class="current">
+                <p class="current-lable">Current</p>
+                <p class="current-score" id="current--1">0</p>
+            </div>
+        </section>
+        <section class="player player--2">
+            <h2 class="namePlayer_2" id="name--2">Player 2</h2>
+            <p class="score" id="score--2">0</p>
+            <div class="current">
+                <p class="current-lable">Current</p>
+                <p class="current-score" id="current--2">0</p>
+            </div>
+        </section>
+        <img src="#" alt="Playing Dice">
+        <button class="btn newGame">🔁 New Game</button>
+        <button class="btn rollDice">🎲 Roll Dice</button>
+        <button class="btn hold">🛑 Hold</button>
+        <div class="btn alter">
+            <label for="alter">🔄 One by One</label>
+        <input type="checkbox" class="check"  name="alter"  id="alter-Chance">
+        </div>
+    </main>
+    <button class="btn inpName ">Player Name</button>
+    <div class="inpBox hide">
+        <h3>Enter Player Names</h3>
+        <input class="inp" id="player_1_name" placeholder="Player 1 Name" type="text">
+        <input class="inp" id="player_2_name"  placeholder="Player 2 Name" type="text">
+        <button class="btn" id="start">Start!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
