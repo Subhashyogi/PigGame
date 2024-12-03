@@ -217,3 +217,11 @@ h3 {
     top: 0;
     left: 30%;
 }
+
+.winner {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #2f2f2f;
+    color: #753682;
+}
