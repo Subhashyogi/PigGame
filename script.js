@@ -61,7 +61,8 @@ rollDice.addEventListener("click", () => {
     let diceNumber = Math.trunc(Math.random() * 6) + 1;
 
     // Display dice
-    img.src = `dice${diceNumber}.png`;
+
+    img.src = `dice-${diceNumber}.png`;
     // check dice number is 1
     if (diceNumber !== 1) {
       // add dice current score
