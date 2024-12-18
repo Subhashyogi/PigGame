@@ -123,7 +123,7 @@ const currentScorePlayer_1 = function() {
         toActivePlayer_1();
         rollDice.disabled = true;
         hold.disabled = true;
-        alterChance.disabled = true;
+       
       }
       return scorePlayer_1;
     }
@@ -176,7 +176,6 @@ const currentScoreBtnPlayer_1 = function () {
       // scorePlayer_1 = 0;
       rollDice.disabled = true;
       hold.disabled = true;
-      alterChance.disabled = true;
     }
     else {
       // console.log('player 1 score ' + scorePlayer_1);
