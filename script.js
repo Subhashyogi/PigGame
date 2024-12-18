@@ -16,6 +16,7 @@ const alterChance = document.querySelector('#alter-Chance');
 const send = document.querySelector('#start');
 const inpname = document.querySelector('.inpName');
 const inpbox = document.querySelector('.inpBox');
+const img = document.querySelector('.img');
 
 
 let activePlayer, currentScore, scorePlayer, playing;
@@ -58,6 +59,9 @@ rollDice.addEventListener("click", () => {
     
     // generate dice number
     let diceNumber = Math.trunc(Math.random() * 6) + 1;
+
+    // Display dice
+    img.src = `dice${diceNumber}.png`;
     // check dice number is 1
     if (diceNumber !== 1) {
       // add dice current score
