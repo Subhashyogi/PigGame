@@ -66,7 +66,7 @@ newGame.addEventListener(
         alterChance.checked = false;
         rollDice.disabled = false;
         hold.disabled = false;
-        alterChance.disabled = false;;
+        alterChance.disabled = true;
     }
 )
 const toActivePlayer_1 = function() {
@@ -166,7 +166,7 @@ const currentScorePlayer_2 = function() {
 
 
 //current data function for both players
-const Max = 10;
+const Max = 100;
 const currentScoreBtnPlayer_1 = function () {
    
     if (scorePlayer_1 >= Max) {
@@ -213,12 +213,8 @@ const holdBtn = function (player) {
     
     //one by one chance of playing 
     // active();
-    if ((alterChance.checked === true)) {
       hold.addEventListener("click", player);
       active();
-
-    }
-    hold.addEventListener("click", player);
 }
 
 
